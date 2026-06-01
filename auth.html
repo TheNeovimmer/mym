@@ -2,35 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Sign up or log in to MYM and start learning sign language through play. Free to start.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up / Log In — MYM</title>
+  <title>Sign Up / Log In &mdash; MYM</title>
   <link rel="icon" href="assets/images/logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <a href="index.html" class="navbar-brand">
-      <img src="assets/images/logo.png" alt="MYM">
-    </a>
+    <nav class="navbar">
     <div class="nav-links">
-      <a href="index.html">Home</a>
+    <div>
+      <a href="index.html" class="active">Home</a>
       <a href="dashboard.html">Dashboard</a>
       <a href="courses.html">Courses</a>
       <a href="library.html">Library</a>
       <a href="mym.html">Mym AI</a>
     </div>
+  </div>
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="MYM">
+    </a>
     <div class="nav-profile">
-      <a href="auth.html"><div class="nav-avatar">K</div></a>
+      <div class="nav-xp"><i class="fa-solid fa-bolt"></i><span>420</span></div>
+      <div class="streak-badge"><i class="fa-solid fa-fire"></i> 7</div>
+      <a href="profile.html"><div class="nav-avatar">K</div></a>
     </div>
     <div class="menu-toggle"><span></span><span></span><span></span></div>
   </nav>
 
-  <main class="auth-page">
+<main class="auth-page">
     <div class="auth-container">
       <div class="auth-header">
         <img src="assets/images/logo.png" alt="MYM">
+        <svg class="auth-hand-icon" width="32" height="32"><use href="assets/images/icons.svg#icon-hand-heart"/></svg>
         <h2>Welcome to <span style="color:var(--blue);">MYM</span></h2>
         <p>Sign language learning through play</p>
       </div>
@@ -46,9 +52,8 @@
             <label>Email or Username</label>
             <div class="input-icon">
               <i class="fa-regular fa-envelope"></i>
-              <input type="email" placeholder="you@example.com" required>
-            </div>
-          </div>
+              <input type="email" placeholder="you@example.com" required>  </div>
+  </div>
           <div class="field">
             <label>Password</label>
             <div class="input-icon">
@@ -107,12 +112,45 @@
       </div>
 
       <div class="auth-trust">
-        <span><i class="fa-solid fa-lock" style="font-size:12px;"></i> Encrypted</span>
-        <span><i class="fa-solid fa-shield" style="font-size:12px;"></i> Secure</span>
-        <span><i class="fa-solid fa-check" style="font-size:12px;"></i> No spam</span>
+        <span><svg width="14" height="14"><use href="assets/images/icons.svg#icon-check"/></svg> Encrypted</span>
+        <span><svg width="14" height="14"><use href="assets/images/icons.svg#icon-ok"/></svg> Secure</span>
+        <span><svg width="14" height="14"><use href="assets/images/icons.svg#icon-hand-heart"/></svg> No spam</span>
       </div>
     </div>
   </main>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="MYM">
+          <p>Making sign language accessible, fun, and free for everyone.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <a href="courses.html">ASL Course</a>
+          <a href="courses.html">International Signs</a>
+          <a href="library.html">Sign Library</a>
+          <a href="review.html">Flashcards</a>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <a href="#">Leaderboard</a>
+          <a href="#">Forums</a>
+          <a href="#">Events</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2025 MYM. All rights reserved.</div>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="assets/js/main.js"></script>

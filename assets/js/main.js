@@ -3,11 +3,21 @@ $(function() {
   // ===== NAVBAR TOGGLE =====
   $('.menu-toggle').on('click', function() {
     $('.nav-links').toggleClass('open');
+    $('.menu-toggle').toggleClass('open');
+    $('body').toggleClass('nav-open');
+  });
+
+  $('.nav-links a').on('click', function() {
+    $('.nav-links').removeClass('open');
+    $('.menu-toggle').removeClass('open');
+    $('body').removeClass('nav-open');
   });
 
   $(document).on('click', function(e) {
-    if (!$(e.target).closest('.navbar').length) {
+    if ($('.nav-links').hasClass('open') && !$(e.target).closest('.navbar').length) {
       $('.nav-links').removeClass('open');
+      $('.menu-toggle').removeClass('open');
+      $('body').removeClass('nav-open');
     }
   });
 
