@@ -46,35 +46,49 @@
     <div class="container">
       <div class="card mym-chat-card">
         <div class="mym-header">
-          <div class="mym-avatar"><svg width="24" height="24" style="color:#fff;"><use href="assets/images/icons.svg#icon-hand-chat"/></svg></div>
-          <div>
-            <h3>Mym</h3>
-            <span class="mym-status online">Online</span>
+          <a href="dashboard.html" class="mym-back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+          <div class="mym-avatar">
+            <svg width="20" height="20" style="color:#fff;"><use href="assets/images/icons.svg#icon-hand-chat"/></svg>
+          </div>
+          <div class="mym-header-info">
+            <div class="mym-header-top">
+              <h3>Mym</h3>
+              <span class="mym-status online"><span class="status-dot"></span> Online</span>
+            </div>
           </div>
         </div>
 
-        <div class="mym-messages">
+        <div class="mym-messages" id="mymMessages">
           <div class="mym-msg bot">
-            <div class="msg-bubble">Hi! I'm Mym, your sign language tutor. Ready to practice?</div>
+            <div class="msg-bubble">Hey there! 👋 I'm Mym, your personal sign language tutor. Ready to learn some signs?</div>
           </div>
           <div class="mym-msg user">
-            <div class="msg-bubble user-bubble">Yes! What should we work on?</div>
+            <div class="msg-bubble user-bubble">Yes! What should we start with?</div>
           </div>
           <div class="mym-msg bot">
-            <div class="msg-bubble">Let's start with greetings. I'll show you a sign — you tell me what it means!</div>
+            <div class="msg-bubble">Let's begin with basic greetings. Try waving your dominant hand side to side — that's "hello"! 🖐️</div>
+          </div>
+          <div class="mym-msg user">
+            <div class="msg-bubble user-bubble">Like this? *waves hand*</div>
+          </div>
+          <div class="mym-msg bot">
+            <div class="msg-bubble">Perfect! You just signed "hello"! Ready for more? Try asking me about <strong>alphabet</strong>, <strong>numbers</strong>, or <strong>family</strong> signs.</div>
+          </div>
+          <div class="mym-typing" id="mymTyping" style="display:none;">
+            <div class="typing-dots"><span></span><span></span><span></span></div>
           </div>
         </div>
 
         <div class="mym-quick-actions">
-          <button class="quick-action">Practice Greetings</button>
-          <button class="quick-action">Review Numbers</button>
-          <button class="quick-action">Fingerspelling</button>
-          <button class="quick-action">Show Progress</button>
+          <button class="quick-action"><i class="fa-regular fa-hand-peace"></i> Greetings</button>
+          <button class="quick-action"><i class="fa-solid fa-hashtag"></i> Numbers</button>
+          <button class="quick-action"><i class="fa-regular fa-keyboard"></i> Alphabet</button>
+          <button class="quick-action"><i class="fa-solid fa-chart-simple"></i> My Progress</button>
         </div>
 
         <div class="mym-input">
-          <input type="text" placeholder="Type a message or ask Mym something...">
-          <button class="btn-send"><svg width="18" height="18" style="color:#fff;"><use href="assets/images/icons.svg#icon-hand-chat"/></svg></button>
+          <input type="text" placeholder="Type a message..." id="mymInput">
+          <button class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
         </div>
       </div>
     </div>

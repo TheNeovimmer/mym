@@ -104,10 +104,13 @@ $(function() {
     if (!text) return;
     addChatMsg(text, 'user');
     $input.val('');
+    $('#mymTyping').show();
+    $('.mym-messages').scrollTop($('.mym-messages')[0].scrollHeight);
     setTimeout(function() {
       var reply = getMymReply(text);
+      $('#mymTyping').hide();
       addChatMsg(reply, 'bot');
-    }, 1200);
+    }, 1400);
   });
 
   $(document).on('keypress', '.mym-input input', function(e) {
@@ -118,13 +121,13 @@ $(function() {
     var cls = sender === 'user' ? 'user' : 'bot';
     var bubbleCls = sender === 'user' ? ' user-bubble' : '';
     var html = '<div class="mym-msg ' + cls + '"><div class="msg-bubble' + bubbleCls + '">' + text + '</div></div>';
-    $('.mym-messages').append(html);
+    $('#mymTyping').before(html);
     $('.mym-messages').scrollTop($('.mym-messages')[0].scrollHeight);
   }
 
   // ===== QUICK ACTIONS =====
   $(document).on('click', '.quick-action', function() {
-    var text = $(this).text();
+    var text = $(this).clone().children().remove().end().text().trim();
     $('.mym-input input').val(text).focus();
     $('.btn-send').click();
   });
