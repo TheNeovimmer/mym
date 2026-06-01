@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — MYM</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="MYM">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="library.html">Library</a>
+      <a href="mym.html">Mym AI</a>
+    </div>
+    <div class="nav-profile">
+      <div class="nav-xp"><i class="fa-solid fa-bolt"></i><span class="xp-animate">420</span></div>
+      <div class="streak-badge"><i class="fa-solid fa-fire"></i> <span>7</span></div>
+      <a href="profile.html"><div class="nav-avatar">K</div></a>
+    </div>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <main class="dashboard-page">
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>Welcome back, Karim!</h1>
+        <p><i class="fa-solid fa-fire" style="color:var(--orange);"></i> 7-day streak · <i class="fa-solid fa-bolt" style="color:var(--blue);"></i> 420 XP this week</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="card stat-card">
+          <div class="stat-icon" style="background:var(--blue);"><i class="fa-solid fa-bolt"></i></div>
+          <div class="stat-info">
+            <span>Total XP</span>
+            <strong>2,480</strong>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon" style="background:var(--orange);"><i class="fa-solid fa-fire"></i></div>
+          <div class="stat-info">
+            <span>Longest Streak</span>
+            <strong>14 days</strong>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon" style="background:var(--green);"><i class="fa-solid fa-check"></i></div>
+          <div class="stat-info">
+            <span>Lessons Done</span>
+            <strong>47</strong>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon" style="background:var(--gold);"><i class="fa-solid fa-trophy"></i></div>
+          <div class="stat-info">
+            <span>Rank</span>
+            <strong>#3 Sapphire</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-banner" style="background-image:url(assets/images/banner2.png);">
+        <div class="dash-banner-overlay"></div>
+        <div class="dash-banner-content">
+          <span class="dash-banner-badge"><i class="fa-solid fa-star"></i> Challenge</span>
+          <h3>Complete Unit 3 — Numbers</h3>
+          <p>Master numbers 1-100 today and earn 200 bonus XP!</p>
+          <a href="lesson.html" class="btn btn-sm btn-accent">Start Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="card daily-goal">
+        <div class="goal-header">
+          <h3><i class="fa-solid fa-bullseye" style="color:var(--blue);"></i> Daily Goal</h3>
+          <span>70 / 100 XP</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" style="width:70%;"></div></div>
+      </div>
+
+      <div class="card course-tree-card">
+        <h3><i class="fa-solid fa-tree" style="color:var(--blue);"></i> Course Progress — ASL Basics</h3>
+        <div class="course-tree">
+          <div class="tree-node completed" data-unit="1">
+            <span><i class="fa-solid fa-check"></i></span>
+            <div class="tree-node-label">Hello & Goodbye</div>
+          </div>
+          <div class="tree-line completed"></div>
+          <div class="tree-node completed" data-unit="2">
+            <span><i class="fa-solid fa-check"></i></span>
+            <div class="tree-node-label">Fingerspelling</div>
+          </div>
+          <div class="tree-line completed"></div>
+          <div class="tree-node active" data-unit="3">
+            <span>3</span>
+            <div class="tree-node-label">Numbers</div>
+          </div>
+          <div class="tree-line"></div>
+          <div class="tree-node locked" data-unit="4">
+            <span><i class="fa-solid fa-lock"></i></span>
+            <div class="tree-node-label">Colors</div>
+          </div>
+          <div class="tree-line"></div>
+          <div class="tree-node locked" data-unit="5">
+            <span><i class="fa-solid fa-lock"></i></span>
+            <div class="tree-node-label">Family</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-row">
+        <div class="card challenge-card">
+          <h3><i class="fa-solid fa-trophy" style="color:var(--orange);"></i> Weekly Challenge</h3>
+          <p>Complete 5 lessons for 50 bonus XP!</p>
+          <div class="challenge-dots">
+            <span class="dot filled"></span>
+            <span class="dot filled"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <a href="lesson.html" class="btn btn-sm btn-accent">Continue</a>
+        </div>
+
+        <div class="card leaderboard-card">
+          <h3><i class="fa-solid fa-ranking-star" style="color:var(--gold);"></i> Leaderboard</h3>
+          <div class="lb-entry"><span class="lb-rank">1</span><span class="lb-name">Sarah</span><span class="lb-xp">890</span></div>
+          <div class="lb-entry"><span class="lb-rank">2</span><span class="lb-name">Marcus</span><span class="lb-xp">650</span></div>
+          <div class="lb-entry current"><span class="lb-rank">3</span><span class="lb-name">Karim</span><span class="lb-xp">420</span></div>
+          <div class="lb-entry"><span class="lb-rank">4</span><span class="lb-name">Amara</span><span class="lb-xp">380</span></div>
+          <div class="lb-entry"><span class="lb-rank">5</span><span class="lb-name">James</span><span class="lb-xp">210</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:24px;">
+        <h3><i class="fa-solid fa-users" style="color:var(--blue);"></i> Friend Activity</h3>
+        <div class="friend-activity">
+          <div class="friend-entry">
+            <div class="friend-avatar" style="background:var(--orange);">S</div>
+            <span><strong>Sarah</strong> completed <em>Numbers</em> <span class="friend-time">2h ago</span></span>
+          </div>
+          <div class="friend-entry">
+            <div class="friend-avatar" style="background:var(--green);">M</div>
+            <span><strong>Marcus</strong> earned <em>50 XP</em> <span class="friend-time">4h ago</span></span>
+          </div>
+          <div class="friend-entry">
+            <div class="friend-avatar" style="background:var(--gold);">A</div>
+            <span><strong>Amara</strong> started <em>Colors</em> <span class="friend-time">1d ago</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

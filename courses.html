@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — MYM</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="MYM">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html" class="active">Courses</a>
+      <a href="library.html">Library</a>
+      <a href="mym.html">Mym AI</a>
+    </div>
+    <div class="nav-profile">
+      <div class="nav-xp"><i class="fa-solid fa-bolt"></i><span class="xp-animate">420</span></div>
+      <div class="streak-badge"><i class="fa-solid fa-fire"></i> <span>7</span></div>
+      <a href="profile.html"><div class="nav-avatar">K</div></a>
+    </div>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <main class="courses-page">
+    <div class="container">
+      <div class="section-header" style="text-align:center;padding-top:32px;">
+        <h1>Choose Your Path</h1>
+        <p>Master ASL, International Signs, or both.</p>
+      </div>
+
+      <div class="course-grid">
+        <div class="card course-card">
+          <div class="course-card-img" style="background:#fff;text-align:center;">
+            <svg><use href="assets/images/icons.svg#icon-ily"/></svg>
+          </div>
+          <div class="course-card-body">
+            <h3>ASL Basics</h3>
+            <p>Start with everyday signs, greetings, and fingerspelling.</p>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 3h total</span>
+              <span><i class="fa-solid fa-bolt"></i> 320 XP</span>
+            </div>
+            <a href="lesson.html" class="btn btn-primary btn-full">Continue</a>
+          </div>
+        </div>
+
+        <div class="card course-card">
+          <div class="course-card-img" style="background:#fff;text-align:center;">
+            <svg><use href="assets/images/icons.svg#icon-hand-chat"/></svg>
+          </div>
+          <div class="course-card-body">
+            <h3>Conversational ASL</h3>
+            <p>Phrases, questions, and real-world dialogues.</p>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 5h total</span>
+              <span><i class="fa-solid fa-bolt"></i> 580 XP</span>
+            </div>
+            <a href="lesson.html" class="btn btn-primary btn-full">Start</a>
+          </div>
+        </div>
+
+        <div class="card course-card">
+          <div class="course-card-img" style="background:#fff;text-align:center;">
+            <svg><use href="assets/images/icons.svg#icon-dictionary"/></svg>
+          </div>
+          <div class="course-card-body">
+            <h3>International Signs</h3>
+            <p>Global signing system for travel and events.</p>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 4h total</span>
+              <span><i class="fa-solid fa-bolt"></i> 400 XP</span>
+            </div>
+            <a href="lesson.html" class="btn btn-primary btn-full">Start</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-top:48px;">
+        <h2>ASL Basics — Unit Tree</h2>
+        <p>5 units to master foundational signing.</p>
+      </div>
+
+      <div class="card" style="padding:24px;">
+        <div class="course-tree" style="padding:8px 0;">
+          <div class="tree-node completed" data-unit="1">
+            <span><i class="fa-solid fa-check"></i></span>
+            <div class="tree-node-label">Hello & Goodbye</div>
+          </div>
+          <div class="tree-line completed"></div>
+          <div class="tree-node completed" data-unit="2">
+            <span><i class="fa-solid fa-check"></i></span>
+            <div class="tree-node-label">Fingerspelling</div>
+          </div>
+          <div class="tree-line completed"></div>
+          <div class="tree-node active" data-unit="3">
+            <span>3</span>
+            <div class="tree-node-label">Numbers</div>
+          </div>
+          <div class="tree-line"></div>
+          <div class="tree-node locked" data-unit="4">
+            <span><i class="fa-solid fa-lock"></i></span>
+            <div class="tree-node-label">Colors</div>
+          </div>
+          <div class="tree-line"></div>
+          <div class="tree-node locked" data-unit="5">
+            <span><i class="fa-solid fa-lock"></i></span>
+            <div class="tree-node-label">Family</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

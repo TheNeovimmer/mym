@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review — MYM</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="MYM">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="library.html">Library</a>
+      <a href="mym.html">Mym AI</a>
+    </div>
+    <div class="nav-profile">
+      <div class="nav-xp"><i class="fa-solid fa-bolt"></i><span class="xp-animate">420</span></div>
+      <div class="streak-badge"><i class="fa-solid fa-fire"></i> <span>7</span></div>
+      <a href="profile.html"><div class="nav-avatar">K</div></a>
+    </div>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <main class="review-page">
+    <div class="container">
+      <div class="section-header" style="padding-top:32px;">
+        <h1>Flashcard Review</h1>
+        <p>Spaced repetition keeps your signs fresh.</p>
+      </div>
+
+      <div class="card flashcard-card">
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+          <div class="flashcard-front">
+            <div class="flashcard-label">Sign</div>
+            <svg><use href="assets/images/icons.svg#icon-hand-practice"/></svg>
+            <p class="flashcard-sub">Tap to reveal answer</p>
+          </div>
+          <div class="flashcard-back">
+            <div class="flashcard-label">Meaning</div>
+            <h2>Hello</h2>
+            <p class="flashcard-sub">A common greeting sign</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rate-buttons">
+        <button class="rate-btn easy" data-rate="easy">
+          <i class="fa-regular fa-face-smile"></i> Easy
+        </button>
+        <button class="rate-btn okay" data-rate="okay">
+          <i class="fa-regular fa-face-meh"></i> Okay
+        </button>
+        <button class="rate-btn hard" data-rate="hard">
+          <i class="fa-regular fa-face-frown"></i> Hard
+        </button>
+      </div>
+
+      <div class="card" style="padding:24px;margin-top:16px;">
+        <h3><i class="fa-solid fa-chart-simple" style="color:var(--blue);"></i> Session Stats</h3>
+        <table class="stats-table">
+          <tr><td>Cards Reviewed</td><td><strong>12 / 20</strong></td></tr>
+          <tr><td>Correct</td><td><strong style="color:var(--green);">9</strong></td></tr>
+          <tr><td>Need Practice</td><td><strong style="color:var(--orange);">3</strong></td></tr>
+          <tr><td>Accuracy</td><td><strong>75%</strong></td></tr>
+        </table>
+      </div>
+
+      <div class="card" style="padding:24px;">
+        <h3><i class="fa-regular fa-calendar" style="color:var(--blue);"></i> Review History</h3>
+        <div class="xp-chart">
+          <div class="xp-bar" style="height:60px;"><span>Mon</span><span>12</span></div>
+          <div class="xp-bar" style="height:90px;"><span>Tue</span><span>20</span></div>
+          <div class="xp-bar" style="height:70px;"><span>Wed</span><span>15</span></div>
+          <div class="xp-bar" style="height:100px;"><span>Thu</span><span>25</span></div>
+          <div class="xp-bar" style="height:40px;"><span>Fri</span><span>8</span></div>
+          <div class="xp-bar" style="height:80px;"><span>Sat</span><span>18</span></div>
+          <div class="xp-bar" style="height:55px;"><span>Sun</span><span>10</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

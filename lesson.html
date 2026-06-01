@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson — MYM</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="MYM">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="courses.html">Courses</a>
+      <a href="library.html">Library</a>
+      <a href="mym.html">Mym AI</a>
+    </div>
+    <div class="nav-profile">
+      <div class="nav-xp"><i class="fa-solid fa-bolt"></i><span class="xp-animate">420</span></div>
+      <div class="streak-badge"><i class="fa-solid fa-fire"></i> <span>7</span></div>
+      <a href="profile.html"><div class="nav-avatar">K</div></a>
+    </div>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <main class="lesson-page">
+    <div class="container">
+      <div class="lesson-header">
+        <div class="lesson-progress">
+          <span class="progress-dot filled"></span>
+          <span class="progress-dot filled"></span>
+          <span class="progress-dot filled"></span>
+          <span class="progress-dot active"></span>
+          <span class="progress-dot"></span>
+        </div>
+        <div class="lesson-lives">
+          <i class="fa-solid fa-heart" style="color:#e84040;"></i>
+          <i class="fa-solid fa-heart" style="color:#e84040;"></i>
+          <i class="fa-solid fa-heart" style="color:#e84040;"></i>
+          <i class="fa-solid fa-heart" style="color:#e84040;"></i>
+          <i class="fa-solid fa-heart" style="color:#e84040;"></i>
+        </div>
+      </div>
+
+      <div class="card lesson-question">
+        <div class="sign-display">
+          <svg><use href="assets/images/icons.svg#icon-ily"/></svg>
+          <span class="sign-caption">From the video</span>
+        </div>
+        <h3>What does this sign mean?</h3>
+      </div>
+
+      <div class="options-grid">
+        <button class="option-btn" data-correct="true">
+          <span class="option-letter">A</span>
+          <span class="option-text">Hello</span>
+        </button>
+        <button class="option-btn" data-correct="false">
+          <span class="option-letter">B</span>
+          <span class="option-text">Goodbye</span>
+        </button>
+        <button class="option-btn" data-correct="false">
+          <span class="option-letter">C</span>
+          <span class="option-text">Thank You</span>
+        </button>
+        <button class="option-btn" data-correct="false">
+          <span class="option-letter">D</span>
+          <span class="option-text">Please</span>
+        </button>
+      </div>
+
+      <div class="lesson-hint">
+        <i class="fa-regular fa-lightbulb"></i> The sign uses an open palm moving outward from the chest.
+      </div>
+    </div>
+
+    <div class="lesson-overlay" style="display:none;">
+      <div class="lesson-result">
+        <i class="fa-solid fa-party-horn"></i>
+        <h2>Lesson Complete!</h2>
+        <p>You earned <strong><i class="fa-solid fa-bolt"></i> 15 XP</strong></p>
+        <div class="confetti-container"></div>
+        <div class="lesson-result-actions">
+          <a href="lesson.html" class="btn btn-primary">Next Lesson</a>
+          <a href="courses.html" class="btn btn-outline">Back to Courses</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
