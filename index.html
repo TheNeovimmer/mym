@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <nav class="navbar">
+  <nav class="navbar">
     <div class="nav-links">
     <div>
     <div class="mobile-profile-header">
@@ -19,6 +19,10 @@
       <div class="mobile-profile-info">
         <strong>Karim</strong>
         <span>Level 7 &middot; 1,240 XP</span>
+      </div>
+      <div class="mobile-quick-stats">
+        <span class="mobile-streak"><i class="fa-solid fa-fire"></i> 7</span>
+        <span class="mobile-xp"><i class="fa-solid fa-bolt"></i> 420</span>
       </div>
     </div>
     <hr class="mobile-menu-divider">
@@ -42,62 +46,84 @@
     <div class="menu-toggle"><span></span><span></span><span></span></div>
   </nav>
 
-<section class="hero" style="background-image:url(assets/images/banner1.png);">
+  <section class="hero">
     <div class="hero-overlay"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-floating">
+      <svg class="float-icon f-1"><use href="assets/images/icons.svg#icon-ily"/></svg>
+      <svg class="float-icon f-2"><use href="assets/images/icons.svg#icon-hand-hello"/></svg>
+      <svg class="float-icon f-3"><use href="assets/images/icons.svg#icon-hand-peace"/></svg>
+      <svg class="float-icon f-4"><use href="assets/images/icons.svg#icon-hand-love"/></svg>
+    </div>
     <div class="container">
       <div class="hero-content">
         <span class="hero-badge"><i class="fa-solid fa-hand-peace"></i> Interactive Learning</span>
         <h1>Sign Language,<br><span>Through Play</span></h1>
-        <p>Master ASL and International Signs through bite-sized games, daily streaks, and your personal AI tutor.</p>
+        <p class="hero-sub">Master ASL and International Signs through bite-sized games, daily streaks, and your personal AI tutor.</p>
         <div class="hero-actions">
-          <a href="auth.html" class="btn btn-accent btn-lg">Get Started Free</a>
+          <a href="auth.html" class="btn btn-accent btn-lg">Get Started Free <span class="btn-icon-wrap"><i class="fa-solid fa-arrow-right"></i></span></a>
           <a href="courses.html" class="btn btn-outline btn-lg">Explore Courses</a>
         </div>
         <div class="hero-trust">
           <span><i class="fa-solid fa-check-circle"></i> No experience needed</span>
           <span><i class="fa-solid fa-check-circle"></i> Free to start</span>
           <span><i class="fa-solid fa-check-circle"></i> 5 min a day</span>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>50K+</strong>
+            <span>Learners</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>1,200+</strong>
+            <span>Signs</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>200+</strong>
+            <span>Lessons</span>
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-arrow-trend-up"></i> How It Works</span>
         <h2>Your Path to Fluency</h2>
-        <p>Six essential pillars for mastering sign language.</p>
+        <p>Three simple steps to start signing with confidence.</p>
       </div>
-      <div class="features-grid">
-        <div class="card feature-card">
-          <svg><use href="assets/images/icons.svg#icon-hand-practice"/></svg>
-          <h3>Interactive Games</h3>
-          <p>Match signs to words and earn XP through bite-sized challenges.</p>
+      <div class="steps-grid">
+        <div class="card step-card">
+          <img class="step-img" src="assets/images/banner1.png" alt="Learn" loading="lazy">
+          <div class="step-body">
+            <div class="step-number">1</div>
+            <h3>Learn</h3>
+            <p>Bite-sized lessons introduce new signs with memory aids and visual cues.</p>
+          </div>
         </div>
-        <div class="card feature-card">
-          <svg><use href="assets/images/icons.svg#icon-hand-chat"/></svg>
-          <h3>Mym AI Tutor</h3>
-          <p>Chat with your personal tutor. Real-time feedback on every sign.</p>
+        <div class="card step-card">
+          <img class="step-img" src="assets/images/banner2.png" alt="Practice" loading="lazy">
+          <div class="step-body">
+            <div class="step-number">2</div>
+            <h3>Practice</h3>
+            <p>Interactive games and quizzes reinforce what you learned. Earn XP with every correct answer.</p>
+          </div>
         </div>
-        <div class="card feature-card">
-          <svg><use href="assets/images/icons.svg#icon-hand-streak"/></svg>
-          <h3>Daily Streaks</h3>
-          <p>Build momentum with streaks. Every day counts toward fluency.</p>
-        </div>
-        <div class="card feature-card">
-          <svg><use href="assets/images/icons.svg#icon-dictionary"/></svg>
-          <h3>1000+ Signs</h3>
-          <p>A growing library of ASL and International signs with memory aids.</p>
-        </div>
-        <div class="card feature-card">
-          <svg><use href="assets/images/icons.svg#icon-hand-book"/></svg>
-          <h3>Two Tracks</h3>
-          <p>Master ASL, International Signs, or both at your own pace.</p>
-        </div>
-        <div class="card feature-card">
-          <svg><use href="assets/images/icons.svg#icon-hand-repeat"/></svg>
-          <h3>Smart Reviews</h3>
-          <p>Spaced repetition schedules practice at the perfect moment.</p>
+        <div class="card step-card">
+          <img class="step-img" src="assets/images/banner1.png" alt="Master" loading="lazy">
+          <div class="step-body">
+            <div class="step-number">3</div>
+            <h3>Master</h3>
+            <p>Mym AI tutor and spaced repetition lock in long-term fluency. Never forget a sign.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -106,11 +132,54 @@
   <section class="section" style="background:var(--bg-card);">
     <div class="container">
       <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-cubes"></i> Six Pillars</span>
+        <h2>Everything You Need</h2>
+        <p>Six essential pillars for mastering sign language.</p>
+      </div>
+      <div class="features-grid">
+        <div class="card feature-card">
+          <div class="feature-icon"><svg><use href="assets/images/icons.svg#icon-hand-practice"/></svg></div>
+          <h3>Interactive Games</h3>
+          <p>Match signs to words and earn XP through bite-sized challenges.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon"><svg><use href="assets/images/icons.svg#icon-hand-chat"/></svg></div>
+          <h3>Mym AI Tutor</h3>
+          <p>Chat with your personal tutor. Real-time feedback on every sign.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon"><svg><use href="assets/images/icons.svg#icon-hand-streak"/></svg></div>
+          <h3>Daily Streaks</h3>
+          <p>Build momentum with streaks. Every day counts toward fluency.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon"><svg><use href="assets/images/icons.svg#icon-dictionary"/></svg></div>
+          <h3>1000+ Signs</h3>
+          <p>A growing library of ASL and International signs with memory aids.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon"><svg><use href="assets/images/icons.svg#icon-hand-book"/></svg></div>
+          <h3>Two Tracks</h3>
+          <p>Master ASL, International Signs, or both at your own pace.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon"><svg><use href="assets/images/icons.svg#icon-hand-repeat"/></svg></div>
+          <h3>Smart Reviews</h3>
+          <p>Spaced repetition schedules practice at the perfect moment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-sun"></i> Daily</span>
         <h2>Sign of the Day</h2>
         <p>A new sign to learn every morning.</p>
       </div>
       <div class="card sign-day-card">
-        <svg><use href="assets/images/icons.svg#icon-ily"/></svg>
+        <div class="sign-day-icon"><svg><use href="assets/images/icons.svg#icon-ily"/></svg></div>
         <div class="sign-day-info">
           <h3>I Love You (ILY)</h3>
           <p>The ILY sign combines the ASL letters I, L, and Y. Extend your thumb, index finger, and pinky while folding your middle and ring fingers down. It is the most recognized sign worldwide.</p>
@@ -120,9 +189,10 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="background:var(--bg-card);">
     <div class="container">
       <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-star"></i> Testimonials</span>
         <h2>Loved by Learners</h2>
         <p>Real stories from the MYM community.</p>
       </div>
@@ -170,32 +240,80 @@
     </div>
   </section>
 
-  <section class="section" style="background:var(--blue);padding:80px 0;">
-    <div class="container" style="text-align:center;">
-      <h2 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px;">Learn on the Go</h2>
-      <p style="color:rgba(255,255,255,.85);font-size:1rem;max-width:480px;margin:0 auto 24px;">Download MYM and take your practice everywhere.</p>
-      <div class="app-badges">
-        <div class="app-badge">
-          <i class="fa-brands fa-apple"></i>
-          <div class="app-badge-text">
-            <small>Download on the</small>
-            <strong>App Store</strong>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-tag"></i> Pricing</span>
+        <h2>Choose Your Plan</h2>
+        <p>Start free. Upgrade when you are ready for more.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="card pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-name">Free</div>
+            <div class="pricing-price">$0 <span>/mo</span></div>
+            <div class="pricing-desc">Perfect for getting started</div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Core lessons</li>
+            <li><i class="fa-solid fa-check"></i> Daily streaks</li>
+            <li><i class="fa-solid fa-check"></i> Sign library access</li>
+            <li><i class="fa-solid fa-minus"></i> Mym AI Tutor</li>
+            <li><i class="fa-solid fa-minus"></i> Offline mode</li>
+            <li><i class="fa-solid fa-minus"></i> Unlimited reviews</li>
+            <li><i class="fa-solid fa-minus"></i> Priority support</li>
+          </ul>
+          <div class="pricing-footer">
+            <a href="auth.html" class="btn btn-primary">Get Started</a>
           </div>
         </div>
-        <div class="app-badge">
-          <i class="fa-brands fa-google-play"></i>
-          <div class="app-badge-text">
-            <small>Get it on</small>
-            <strong>Google Play</strong>
+        <div class="card pricing-card featured">
+          <span class="pricing-badge"><i class="fa-solid fa-crown"></i> Most Popular</span>
+          <div class="pricing-header">
+            <div class="pricing-name">Plus</div>
+            <div class="pricing-price">$7.99 <span>/mo</span></div>
+            <div class="pricing-desc">For dedicated learners</div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Core lessons</li>
+            <li><i class="fa-solid fa-check"></i> Daily streaks</li>
+            <li><i class="fa-solid fa-check"></i> Sign library access</li>
+            <li><i class="fa-solid fa-check"></i> Mym AI Tutor</li>
+            <li><i class="fa-solid fa-check"></i> Offline mode</li>
+            <li><i class="fa-solid fa-minus"></i> Unlimited reviews</li>
+            <li><i class="fa-solid fa-minus"></i> Priority support</li>
+          </ul>
+          <div class="pricing-footer">
+            <a href="auth.html" class="btn btn-accent">Subscribe</a>
+          </div>
+        </div>
+        <div class="card pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-name">Pro</div>
+            <div class="pricing-price">$14.99 <span>/mo</span></div>
+            <div class="pricing-desc">Maximum fluency acceleration</div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Core lessons</li>
+            <li><i class="fa-solid fa-check"></i> Daily streaks</li>
+            <li><i class="fa-solid fa-check"></i> Sign library access</li>
+            <li><i class="fa-solid fa-check"></i> Mym AI Tutor</li>
+            <li><i class="fa-solid fa-check"></i> Offline mode</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited reviews</li>
+            <li><i class="fa-solid fa-check"></i> Priority support</li>
+          </ul>
+          <div class="pricing-footer">
+            <a href="auth.html" class="btn btn-primary">Go Pro</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="background:var(--bg);">
     <div class="container">
       <div class="section-header">
+        <span class="eyebrow"><i class="fa-solid fa-circle-question"></i> Help Center</span>
         <h2>FAQ</h2>
         <p>Everything you need to know about learning with MYM.</p>
       </div>
@@ -206,7 +324,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-question">Is MYM free? <i class="fa-solid fa-chevron-down"></i></div>
-          <div class="faq-answer">Yes. The free tier includes all core lessons and daily practice. Premium unlocks Mym AI conversations and offline mode.</div>
+          <div class="faq-answer">Yes. The free tier includes all core lessons and daily practice. Plus unlocks Mym AI conversations and offline mode.</div>
         </div>
         <div class="faq-item">
           <div class="faq-question">ASL vs International Signs — what's the difference? <i class="fa-solid fa-chevron-down"></i></div>
@@ -224,24 +342,12 @@
     </div>
   </section>
 
-  <section class="section" style="background:var(--bg);">
-    <div class="container" style="text-align:center;">
-      <div class="section-header">
-        <h2>Stay in the Sign</h2>
-        <p>Weekly tips, new signs, and learning resources in your inbox.</p>
-      </div>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required>
-        <button class="btn btn-primary" type="submit">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
   <section class="section" style="background:var(--blue);padding:80px 0;">
     <div class="container" style="text-align:center;">
+      <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.15);"><i class="fa-solid fa-rocket"></i> Start Today</span>
       <h2 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:#fff;margin-bottom:12px;">Ready to Start?</h2>
       <p style="color:rgba(255,255,255,.85);font-size:1rem;max-width:480px;margin:0 auto 28px;">Join thousands of learners worldwide. No experience needed.</p>
-      <a href="auth.html" class="btn btn-lg" style="background:#fff;color:var(--blue);">Get Started Free</a>
+      <a href="auth.html" class="btn btn-lg" style="background:#fff;color:var(--blue);">Get Started Free <span class="btn-icon-wrap" style="background:rgba(16,114,207,.12);color:var(--blue);"><i class="fa-solid fa-arrow-right"></i></span></a>
     </div>
   </section>
 
